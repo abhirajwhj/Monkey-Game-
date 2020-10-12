@@ -14,7 +14,7 @@ function preload(){
   
   bananaImage = loadImage("banana.png");
   obstacleImage = loadImage("obstacle.png");
-  monkey_collide=loadAnimation("sprite_0.png");
+  monkey_collide = loadImage("sprite_0.png");
 }
 
 
@@ -84,7 +84,7 @@ function draw() {
     FoodGroup.setLifetimeEach(-1);
     text("GAME OVER",200,100);
     score=0;
-    monkey.changeAnimation("monkey3",monkey_collide);
+    monkey.changeImage("monkey3",monkey_collide);
     restart.visible=false;
     text("TAP to START",200,60);
     textColor="white"
